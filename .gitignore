@@ -1,0 +1,13 @@
+# Release builds
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

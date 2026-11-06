@@ -1,0 +1,15 @@
+# Keep line endings right for each platform, whatever system the repo is cloned on
+* text=auto
+
+# Windows scripts need CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.vbs text eol=crlf
+
+# Linux scripts need LF
+*.sh  text eol=lf
+*.py  text eol=lf
+
+# Binary files
+*.png binary
+*.ico binary

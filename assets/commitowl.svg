@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- CommitOwl icon - EMR Industries -->
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="#1f6f5c"/>
+  <!-- circuit traces -->
+  <g stroke="#3fae8c" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M24 196 H62 L78 180"/>
+    <path d="M232 196 H194 L178 180"/>
+  </g>
+  <circle cx="24" cy="196" r="7" fill="#3fae8c"/>
+  <circle cx="232" cy="196" r="7" fill="#3fae8c"/>
+  <!-- ear tufts -->
+  <path d="M66 70 L82 30 L108 62 Z" fill="#c98a4b"/>
+  <path d="M190 70 L174 30 L148 62 Z" fill="#c98a4b"/>
+  <!-- body -->
+  <ellipse cx="128" cy="134" rx="74" ry="86" fill="#c98a4b"/>
+  <ellipse cx="128" cy="164" rx="44" ry="50" fill="#f1d8b4"/>
+  <!-- eyes -->
+  <circle cx="96" cy="106" r="30" fill="#ffffff"/>
+  <circle cx="160" cy="106" r="30" fill="#ffffff"/>
+  <circle cx="98" cy="108" r="13" fill="#1b1b1b"/>
+  <circle cx="158" cy="108" r="13" fill="#1b1b1b"/>
+  <!-- beak -->
+  <path d="M116 132 L140 132 L128 152 Z" fill="#f2a516"/>
+  <!-- commit dots on the chest -->
+  <path d="M128 168 V206" stroke="#1f6f5c" stroke-width="6"/>
+  <circle cx="128" cy="168" r="9" fill="#1f6f5c"/>
+  <circle cx="128" cy="206" r="9" fill="#1f6f5c"/>
+</svg>

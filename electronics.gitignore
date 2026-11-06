@@ -1,0 +1,74 @@
+# =====================================================================
+#  .gitignore for electronics projects - added by CommitOwl
+#  Keeps lock files, backups, caches and build output out of Git.
+#  Gerbers, BOMs and PDFs in your output folders ARE kept.
+# =====================================================================
+
+# ---- KiCad ----
+*.lck
+~*.lck
+*-backups/
+_autosave-*
+*.kicad_prl
+fp-info-cache
+\#auto_saved_files\#
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
+*.000
+rescue-backup/
+
+# ---- Altium Designer ----
+History/
+__Previews/
+Project Logs for */
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview
+*.LdbPreview
+*.htm.bak
+
+# ---- Eagle / Fusion Electronics ----
+*.b#?
+*.s#?
+*.l#?
+eagle.epf
+
+# ---- 3D / mechanical scratch ----
+*.FCStd1
+*.FCBak
+
+# ---- Firmware: PlatformIO, Arduino, STM32CubeIDE, ESP-IDF, Microchip Studio ----
+.pio/
+.pioenvs/
+.piolibdeps/
+build/
+Debug/
+Release/
+*.o
+*.d
+*.su
+*.elf.map
+sdkconfig.old
+managed_components/
+.metadata/
+*.atsuo
+
+# ---- Secrets (never commit) ----
+.env
+.env.*
+*.pem
+*.key
+secrets*.h
+wifi_secrets.h
+
+# ---- Editors and OS ----
+.vscode/.browse*
+.vscode/ipch/
+*.swp
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
