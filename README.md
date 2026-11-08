@@ -13,16 +13,6 @@
 
 Once a day CommitOwl commits every change in your design repositories (KiCad, Altium, Eagle, firmware) and pushes it to the remote, so your schematics, layouts and firmware are backed up even on days you forget to commit. It works with git and any Git client you already use.
 
-## Screenshots
-
-| Repositories | Commit message |
-|---|---|
-| ![Repositories tab](assets/screenshots/windows/repositories.png) | ![Commit message tab](assets/screenshots/windows/commit-message.png) |
-| **Schedule & log** | **About** |
-| ![Schedule & log tab](assets/screenshots/windows/schedule-and-log.png) | ![About tab](assets/screenshots/windows/about.png) |
-
-*Shown on Windows 11. The Linux version has the same tabs and buttons, in your desktop's look.*
-
 ## Download and install
 
 | | Download | Installation guide |
@@ -59,7 +49,13 @@ If you're offline, the commit is still made locally and pushed on the next run.
 
 ## Using CommitOwl
 
+The screenshots below are from Windows 11. The Linux version has the same tabs and buttons, in your desktop's look.
+
 ### Repositories
+
+![Repositories tab](assets/screenshots/windows/repositories.png)
+
+The **Repositories** tab lists every project CommitOwl looks after: its folder, whether it's paused, the branch and remote, when it was last pushed, the latest commit hash, and the result of the last run.
 
 | Button | What it does |
 |---|---|
@@ -85,16 +81,30 @@ A paused repository shows when it resumes (for example *Paused until Sat 7 Nov*)
 
 ![Commit message tab](assets/screenshots/windows/commit-message.png)
 
-Type your message under the fixed header and click **Save message**. Leave it empty for the default line. **Preview** shows exactly what the commit will look like.
+Every automatic commit starts with a fixed header line, `Auto-commit YYYY-MM-DD HH:mm (N files)`, so you can always spot CommitOwl's commits in the history.
+
+- Type your own message in the box under the header and click **Save message**. It's used for every repository, by the daily run and by **Commit & Push**.
+- Leave it empty, or click **Use default**, to get the default line: *Daily automatic commit by CommitOwl.*
+- **Add the list of changed files at the end** adds each changed file with its status (`M` modified, `A` added, `D` deleted).
+- **Preview** shows exactly what the commit message will look like as you type.
 
 ### Schedule & log
 
 ![Schedule & log tab](assets/screenshots/windows/schedule-and-log.png)
 
-- **Commit and push every day at**: the daily time.
+The **Schedule & log** tab sets when the daily commit and push runs and shows what happened.
+
+- **Commit and push every day at**: the daily time. If the PC is off or asleep then, it runs as soon as you're back.
 - **Notify me**: only when something needs attention (default), after every push, or never. A conflict is always notified unless this is **Never**.
 - **Skip files larger than (MB)**: the size guard. GitHub refuses files over 100 MB.
-- **Save schedule** creates or updates the daily job. Untick and save to turn it off.
+- **Save schedule** creates or updates the daily job. Untick and save to turn it off. The text next to it shows the next and last run.
+- **Log**: every run, with each repository's result, conflicts, skipped files and errors. **Refresh** reloads it; **Open log** opens the log file.
+
+### About
+
+![About tab](assets/screenshots/windows/about.png)
+
+The **About** tab shows the version, developer, build date and license.
 
 ### Command line (Linux)
 
