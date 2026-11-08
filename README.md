@@ -13,7 +13,15 @@
 
 Once a day CommitOwl commits every change in your design repositories (KiCad, Altium, Eagle, firmware) and pushes it to the remote, so your schematics, layouts and firmware are backed up even on days you forget to commit. It works with git and any Git client you already use.
 
-![CommitOwl Repositories tab](assets/screenshots/repositories.png)
+## Screenshots
+
+| Repositories | Commit message |
+|---|---|
+| ![Repositories tab](assets/screenshots/windows/repositories.png) | ![Commit message tab](assets/screenshots/windows/commit-message.png) |
+| **Schedule & log** | **About** |
+| ![Schedule & log tab](assets/screenshots/windows/schedule-and-log.png) | ![About tab](assets/screenshots/windows/about.png) |
+
+*Shown on Windows 11. The Linux version has the same tabs and buttons, in your desktop's look.*
 
 ## Download and install
 
@@ -75,13 +83,13 @@ A paused repository shows when it resumes (for example *Paused until Sat 7 Nov*)
 
 ### Commit message
 
-![Commit message tab](assets/screenshots/commit-message.png)
+![Commit message tab](assets/screenshots/windows/commit-message.png)
 
 Type your message under the fixed header and click **Save message**. Leave it empty for the default line. **Preview** shows exactly what the commit will look like.
 
 ### Schedule & log
 
-![Schedule & log tab](assets/screenshots/schedule-and-log.png)
+![Schedule & log tab](assets/screenshots/windows/schedule-and-log.png)
 
 - **Commit and push every day at**: the daily time.
 - **Notify me**: only when something needs attention (default), after every push, or never. A conflict is always notified unless this is **Never**.
@@ -137,7 +145,7 @@ CommitOwl/
 ├── README.md               this file
 ├── LICENSE                 MIT License
 ├── CHANGELOG.md            changes for both versions
-├── assets/                 icon (ico, png, svg) and screenshots
+├── assets/                 icon (ico, png, svg) and Windows screenshots
 ├── electronics.gitignore   template used by Add .gitignore
 ├── windows/                PowerShell, .bat and .vbs files + INSTALL.md
 ├── linux/                  Python files, install.sh + INSTALL.md
